@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds2858tjrmyx4"]
+
+[ext_resource type="Script" path="res://player_ship_controller.gd" id="1_gdiuf"]
+[ext_resource type="Texture2D" uid="uid://c0r46gh4nowxp" path="res://playerShip2_red.png" id="1_nvlf6"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_gdiuf")
+
+[node name="PlayerShip2Red" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_nvlf6")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
+polygon = PackedVector2Array(8, -36.1, 18.2, -17.5, 19.4, -17.5, 56, -0.299999, 56, 12.7, 39.8, 37.5, 28.8, 37.5, 18.5, 34.9, 16.5, 37.5, -17, 37.5, -17, 36.8, -19.8, 35.3, -32.8, 37.5, -41, 37.5, -41, 36.1, -56, 14.9, -56, 0.5, -20, -16.8, -20, -17.6, -14, -21.6, -14, -23.9, -8, -36.9, -8, -37.5, 8, -37.5)
